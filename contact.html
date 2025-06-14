@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+	<style type="text/css">
+		label{
+			display: block;
+			margin-bottom: 5px;
+			color: white;
+		}
+		input, textarea, button{
+			width: 200px;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: black;
+		}
+
+		body{
+
+		}
+
+	</style>
+</head>
+<body style="background-color: black;">
+	<h1 style="text-align: center; color:white;">Contact Form</h1>
+<form action ="/submit" method="post" style="max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius:8px;">
+	<label for="name">Name:</label>
+	<input type="text" name="name" required/>
+
+	<label for="email">Email:</label>
+	<input type="text" name="email" required/>
+
+	<label for="message">Message:</label>
+	<textarea id="message" name="message" rows="4" required></textarea>
+	<button type="submit" style="background-color: seagreen;">Send a message</button>
+</body>
+</html>
